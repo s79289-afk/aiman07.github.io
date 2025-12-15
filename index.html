@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,7 @@
   <title>Aiman Alif | Student Bento Grid</title>
 
   <!-- Google Font -->
-  <linkf="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -90,6 +89,33 @@
     .profile {
       grid-column: span 6;
       grid-row: span 2;
+
+      /* Background image */
+      background-image: url("bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      position: relative;
+      color: #ffffff;
+    }
+
+    /* Overlay for readability */
+    .profile::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        rgba(8, 61, 119, 0.65),
+        rgba(8, 61, 119, 0.35)
+      );
+      border-radius: var(--radius);
+    }
+
+    /* Keep content above overlay */
+    .profile > * {
+      position: relative;
+      z-index: 1;
     }
 
     .location {
@@ -128,7 +154,6 @@
       margin-top: 10px;
       font-style: italic;
       color: var(--accent);
-      font-size: 0.95rem;
     }
 
     /* Mobile */
@@ -163,70 +188,24 @@
           <p class="tagline">“Innovating food safety.”</p>
         </div>
         <div class="social-links">
-          <a href=”https://www.linkedin.com
-          <a href=”https://github.com/yourusername
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">GitHub</a>
           <a href="#" target="_blank">UMT Portal</a>
         </div>
       </div>
 
       <!-- Card 2: Location -->
       <div class="card location">
-        <div>
-          <h2>Location</h2>
-          <p>UMT, Kuala Nerus</p>
-        </div>
+        <h2>Location</h2>
+        <p>UMT, Kuala Nerus</p>
       </div>
 
       <!-- Card 5: Hobby -->
       <div class="card hobby">
-        <div>
-          <h2>Hobby</h2>
-          <p>Evening walks at Pantai UMT</p>
-        </div>
+        <h2>Hobby</h2>
+        <p>Evening walks at Pantai UMT</p>
       </div>
 
       <!-- New Card: Reflection -->
       <div class="card reflection">
-        <div>
-          <h2>Why Agrotech Matters in Malaysia</h2>
-          <p>
-            Agrotech skills need to be available among the community.
-            With these, the country can develop in terms of agriculture.
-          </p>
-        </div>
-      </div>
-
-      <!-- Card 3: Subjects -->
-      <div class="card tech">
-        <div>
-          <h2>Subjects</h2>
-          <div>
-            <span class="tag">Soil Science</span>
-            <span class="tag">Microbiology</span>
-            <span class="tag">Excel</span>
-            <span class="tag">Lab Analysis</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4: Case Study -->
-      <div class="card case-study">
-        <div>
-          <h2>Starch Gelatinization in Local Kuih</h2>
-          <p>Analyzing texture profiles of Kuih Lapis.</p>
-        </div>
-      </div>
-
-      <!-- Card 6: Playlist -->
-      <div class="card playlist">
-        <div>
-          <h2>Playlist</h2>
-          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0F0GJES7fnqVzlFwH9zTbu?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</body>
-</html>
-```
+        <h2>Wh
