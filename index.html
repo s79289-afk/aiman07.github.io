@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aiman Alif | Student Bento Grid</title>
 
-    <linkf="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <linkf="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -16,8 +18,6 @@
       --accent: #083d77; /* Deep Ocean Blue */
       --border: #e5e7eb;
       --radius: 18px;
-      --text-on-dark: #ffffff; /* New variable for text on image/accent */
-      --text-on-dark-secondary: rgba(255, 255, 255, 0.8); /* For details */
     }
 
     * {
@@ -90,40 +90,7 @@
     .profile {
       grid-column: span 6;
       grid-row: span 2;
-      
-      /* --- NEW BACKGROUND STYLES START --- */
-      background-image: linear-gradient(
-          to bottom, 
-          rgba(0, 0, 0, 0.55), /* Darker top for name */
-          rgba(0, 0, 0, 0.35)  /* Lighter bottom */
-        ), 
-        url('ocean 2.jpg'); /* SETS THE UPLOADED IMAGE */
-      
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      
-      color: var(--text-on-dark); 
-      border: none;
-      /* --- NEW BACKGROUND STYLES END --- */
     }
-    
-    /* Style text elements inside the profile card */
-    .profile h2 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: var(--text-on-dark); /* Pure white for the name */
-    }
-
-    .profile p {
-      color: var(--text-on-dark-secondary); /* Subdued white for details */
-      font-size: 1.05rem;
-    }
-    
-    .profile .tagline {
-      color: var(--text-on-dark); /* Keep the tagline bright white */
-      margin-top: 10px;
-    }
 
     .location {
       grid-column: span 3;
@@ -151,16 +118,18 @@
 
     .social-links a {
       text-decoration: none;
-      color: var(--text-on-dark-secondary); /* Now applies to white text */
+      color: var(--accent);
       font-size: 0.9rem;
       margin-right: 14px;
       font-weight: 500;
     }
-    
-    .profile .social-links a:hover {
-        color: var(--accent); /* Use the accent color for hover pop */
-        text-decoration: none;
-    }
+
+    .tagline {
+      margin-top: 10px;
+      font-style: italic;
+      color: var(--accent);
+      font-size: 0.95rem;
+    }
 
     /* Mobile */
     @media (max-width: 768px) {
@@ -178,11 +147,6 @@
         grid-column: span 1;
         grid-row: auto;
       }
-      
-      /* Ensure profile text is legible on mobile too */
-      .profile {
-          padding: 22px; 
-      }
     }
   </style>
 </head>
@@ -190,7 +154,8 @@
   <div class="container">
     <div class="grid">
 
-            <div class="card profile">
+      <!-- Card 1: Profile -->
+      <div class="card profile">
         <div>
           <h2>AIMAN ALIF</h2>
           <p>Program: Science Agrotechnology</p>
@@ -198,27 +163,30 @@
           <p class="tagline">“Innovating food safety.”</p>
         </div>
         <div class="social-links">
-          <a href=”https://www.linkedin.com" target="_blank">LinkedIn</a>
-          <a href=”https://github.com/yourusername" target="_blank">GitHub</a>
+          <a href=”https://www.linkedin.com
+          <a href=”https://github.com/yourusername
           <a href="#" target="_blank">UMT Portal</a>
         </div>
       </div>
 
-            <div class="card location">
+      <!-- Card 2: Location -->
+      <div class="card location">
         <div>
           <h2>Location</h2>
           <p>UMT, Kuala Nerus</p>
         </div>
       </div>
 
-            <div class="card hobby">
+      <!-- Card 5: Hobby -->
+      <div class="card hobby">
         <div>
           <h2>Hobby</h2>
           <p>Evening walks at Pantai UMT</p>
         </div>
       </div>
 
-            <div class="card reflection">
+      <!-- New Card: Reflection -->
+      <div class="card reflection">
         <div>
           <h2>Why Agrotech Matters in Malaysia</h2>
           <p>
@@ -228,7 +196,8 @@
         </div>
       </div>
 
-            <div class="card tech">
+      <!-- Card 3: Subjects -->
+      <div class="card tech">
         <div>
           <h2>Subjects</h2>
           <div>
@@ -240,14 +209,16 @@
         </div>
       </div>
 
-            <div class="card case-study">
+      <!-- Card 4: Case Study -->
+      <div class="card case-study">
         <div>
           <h2>Starch Gelatinization in Local Kuih</h2>
           <p>Analyzing texture profiles of Kuih Lapis.</p>
         </div>
       </div>
 
-            <div class="card playlist">
+      <!-- Card 6: Playlist -->
+      <div class="card playlist">
         <div>
           <h2>Playlist</h2>
           <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0F0GJES7fnqVzlFwH9zTbu?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -258,3 +229,4 @@
   </div>
 </body>
 </html>
+```
