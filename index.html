@@ -15,7 +15,7 @@
       --card-bg: #ffffff;
       --text-primary: #0f172a;
       --text-secondary: #64748b;
-      --accent: #083d77; /* Deep Ocean Blue (UMT-inspired) */
+      --accent: #083d77; /* Deep Ocean Blue */
       --border: #e5e7eb;
       --radius: 18px;
     }
@@ -54,6 +54,13 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    /* Subtle hover zoom */
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
     }
 
     .card h2 {
@@ -93,6 +100,10 @@
       grid-column: span 3;
     }
 
+    .reflection {
+      grid-column: span 3;
+    }
+
     .tech {
       grid-column: span 4;
     }
@@ -129,6 +140,7 @@
       .profile,
       .location,
       .hobby,
+      .reflection,
       .tech,
       .case-study,
       .playlist {
@@ -151,9 +163,9 @@
           <p class="tagline">“Innovating food safety.”</p>
         </div>
         <div class="social-links">
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">UMT Portal</a>
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">GitHub</a>
+          <a href="#" target="_blank">UMT Portal</a>
         </div>
       </div>
 
@@ -170,6 +182,17 @@
         <div>
           <h2>Hobby</h2>
           <p>Evening walks at Pantai UMT</p>
+        </div>
+      </div>
+
+      <!-- New Card: Reflection -->
+      <div class="card reflection">
+        <div>
+          <h2>Why Agrotech Matters in Malaysia</h2>
+          <p>
+            Agrotech skills need to be available among the community.
+            With these, the country can develop in terms of agriculture.
+          </p>
         </div>
       </div>
 
